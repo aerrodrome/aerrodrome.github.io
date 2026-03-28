@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /cgi-bin
+sitemap: https://aerrodrome.github.io/sitemap.xml
+
+
+
+
+

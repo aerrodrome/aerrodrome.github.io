@@ -1,0 +1,156 @@
+{
+  "settings": {
+    "name": "Aerodrome Finance",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#ffffff",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/aerodrome.svg",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://aerrodrome.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://aerrodrome.github.io/sitemap.xml\n\n\n\n\n\n",
+    "mbrsiteDomain": "xrjnpxnxzq",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 3,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Aerodrome™ | Aerodrome Finance | Coin Swap with DeFi Innovation",
+        "meta_descr": "Aerodrome Finance is a next-generation Automated Market Maker (AMM) designed to function as the central liquidity hub on the BASE network.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/aerodrome-1.png\" alt=\"Aerodrome\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uvYFmhUIKO",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#000000\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Aerodrome Finance: Elevating Decentralized Liquidity Solutions</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the fast-paced world of decentralized finance (DeFi), innovative platforms are continuously emerging to address the complexities of trading, liquidity provision, and user engagement. One such platform is <b><a href=\"https://aerrodrome.github.io/\" class=\"text-primary\"><b>Aerodrome Finance</b></a>,</b> a decentralized exchange (DEX) and liquidity protocol that aims to optimize the trading experience while providing robust solutions for liquidity providers. With a focus on efficiency, transparency, and community governance, Aerodrome Finance is set to reshape the DeFi landscape. This blog will delve into the features, functionalities, and potential implications of Aerodrome Finance in the broader context of decentralized finance.<br><br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Aerodrome Finance?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Aerodrome Finance is a decentralized exchange built on the Ethereum blockchain, designed to facilitate efficient trading and liquidity provisioning. By leveraging automated market maker (AMM) technology, Aerodrome allows users to trade cryptocurrencies directly from their wallets without relying on centralized intermediaries. The platform aims to create a seamless trading experience while providing users with the tools necessary to manage their assets effectively.<br><br><b>The Vision Behind Aerodrome Finance</b><br>The vision of Aerodrome Finance is to create a user-centric financial ecosystem that democratizes access to liquidity and trading opportunities. Recognizing the barriers that traditional financial systems impose, Aerodrome Finance seeks to empower users to take control of their finances through decentralized solutions. By prioritizing security, user experience, and community participation, Aerodrome Finance aims to foster a more inclusive and transparent financial environment.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of Aerodrome Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Automated Market Maker (AMM)<br>At the heart of Aerodrome Finance is its automated market maker model. This system allows users to trade assets directly from their wallets while utilizing smart contracts to determine prices based on supply and demand within liquidity pools. The AMM model enhances trading efficiency and reduces risks associated with traditional order book systems, making it easier for users to execute trades.<br><br>2. Liquidity Pools<br>Aerodrome Finance provides users with the opportunity to create and participate in liquidity pools. By contributing assets to these pools, liquidity providers can earn rewards in the form of trading fees and token incentives. This functionality empowers users to maximize the utility of their assets and contribute to the overall liquidity of the platform.<br><br>3. Low Transaction Fees<br>One of the standout features of Aerodrome Finance is its low transaction fees. Operating on the Ethereum network, the platform employs strategies to minimize gas costs, making it an attractive option for both traders and liquidity providers. This affordability enhances the overall trading experience, particularly during periods of high network congestion.<br><br>4. User-Friendly Interface<br>Aerodrome Finance emphasizes user experience with a clean and intuitive interface. The platform is designed to be accessible for users of all experience levels, from beginners to seasoned traders. The straightforward navigation and clear information display ensure that users can easily engage with the platform’s features.<br><br>5. Cross-Chain Compatibility<br>Understanding the importance of interoperability in the DeFi ecosystem, Aerodrome Finance aims to support cross-chain functionality. This feature allows users to interact with assets from multiple blockchain networks, expanding the range of available options and enhancing flexibility for liquidity providers and traders.<br><br>6. Governance Token<br>Aerodrome Finance has its native governance token, AERO, which plays a crucial role within the ecosystem. Users can earn AERO tokens through liquidity provision and participation in various platform activities. These tokens can be used for governance, staking, and earning rewards, creating a vibrant and engaged community around the project.<br><br>7. Community Governance<br>Community involvement is a cornerstone of Aerodrome Finance’s philosophy. The platform incorporates governance mechanisms that allow users to participate in decision-making processes. Token holders can propose and vote on changes to the protocol, ensuring that the community has a voice in shaping the platform’s future.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Problems Aerodrome Finance Aims to Solve</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Liquidity Fragmentation<br>Liquidity fragmentation is a significant challenge in the DeFi space, where liquidity is spread across multiple platforms. Aerodrome Finance aims to address this issue by providing a unified platform for liquidity provision and trading. By creating optimized liquidity pools, the protocol enhances overall liquidity and trading efficiency.<br><br>2. High Transaction Costs<br>Many DeFi platforms suffer from high transaction costs, particularly during periods of network congestion. Aerodrome Finance mitigates this issue by employing strategies to reduce gas fees, making it a cost-effective solution for users looking to trade and provide liquidity.<br><br>3. Complexity of User Interfaces<br>The steep learning curve associated with many DeFi platforms can discourage new users from participating. Aerodrome Finance addresses this challenge with a user-friendly interface that simplifies navigation and enhances the overall user experience. The platform is designed to be intuitive, making it accessible to users with varying levels of experience.<br><br>4. Limited Access to Cross-Chain Assets<br>As the blockchain ecosystem grows, the need for interoperability becomes increasingly important. Aerodrome Finance aims to support cross-chain transactions, allowing users to interact with a broader range of assets and services. This flexibility enhances user experience and expands trading opportunities.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Aerodrome Finance Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. User Registration and Wallet Integration<br>To get started with Aerodrome Finance, users can easily register on the platform and integrate their cryptocurrency wallets. This process enables users to retain full control over their assets while accessing the platform’s features and functionalities.<br><br>2. Creating and Participating in Liquidity Pools<br>Once registered, users can create or join liquidity pools. By depositing assets into these pools, users contribute to the overall liquidity of the platform and earn rewards through trading fees. Aerodrome Finance provides clear information about available pools, enabling users to make informed decisions.<br><br>3. Trading on the AMM<br>Users can trade cryptocurrencies directly from their wallets using the AMM functionality. The platform automatically adjusts prices based on the supply and demand within the liquidity pools, ensuring efficient trade execution. Users can easily select trading pairs and execute trades with minimal slippage.<br><br>4. Earning Rewards<br>By participating in liquidity pools and trading on the platform, users can earn AERO tokens and other incentives. These rewards can be staked for additional returns or used for governance purposes, allowing users to actively participate in the platform’s development.<br><br>5. Cross-Chain Transactions<br>Aerodrome Finance’s commitment to cross-chain compatibility allows users to interact with assets from multiple blockchain networks. This feature enhances user flexibility and expands the range of trading opportunities available on the platform.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Benefits of Using Aerodrome Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Enhanced Liquidity<br>Aerodrome Finance’s liquidity pools provide users with the opportunity to contribute to a unified liquidity source, enhancing overall trading efficiency. This aggregation of liquidity benefits both traders and liquidity providers.<br><br>2. Low Transaction Fees<br>Operating on Ethereum with optimized strategies, Aerodrome Finance offers low transaction fees, making it an attractive option for users looking to minimize costs associated with trading and liquidity provision.<br><br>3. User-Friendly Experience<br>Aerodrome Finance’s intuitive interface simplifies the trading process, ensuring that users of all experience levels can navigate the platform with ease. This focus on user experience encourages greater participation in the DeFi space.<br><br>4. Diverse Financial Opportunities<br>With support for multiple trading pairs and liquidity pools, Aerodrome Finance allows users to explore a variety of financial opportunities. This diversity increases the likelihood of finding profitable trades and enhances the overall trading experience.<br><br>5. Community Engagement<br>Through its governance model, Aerodrome Finance empowers users to participate in decision-making processes. This democratic approach fosters a strong sense of community and collaboration, ensuring that users have a voice in the platform’s future.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Aerodrome Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Expanding Features and Services<br>As the DeFi landscape continues to evolve, Aerodrome Finance is likely to expand its offerings to include new features and services. This may involve introducing additional financial products, enhancing existing functionalities, and exploring partnerships with other projects.<br><br>2. Continued Focus on User Experience<br>Aerodrome Finance will likely continue prioritizing user experience by refining its interface and enhancing the overall platform. User feedback and community input will play a crucial role in shaping future developments.<br><br>3. Enhancing Cross-Chain Functionality<br>To further support interoperability, Aerodrome Finance may explore ways to enhance its cross-chain capabilities. This could involve integrating with additional blockchain networks and expanding the range of supported assets.<br><br>4. Building Strategic Partnerships<br>Aerodrome Finance may pursue partnerships with other projects, exchanges, and liquidity providers in the DeFi ecosystem. Collaborations can improve liquidity, expand service offerings, and provide users with more options.<br><br>5. Community and Ecosystem Growth<br>As Aerodrome Finance continues to grow, it will likely focus on building its community and ecosystem. This could involve hosting events, educational initiatives, and marketing campaigns to attract new users and engage existing ones.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1. Market Volatility<br>The DeFi space is characterized by significant market volatility, which can impact trading strategies and investment outcomes. Users should be aware of the risks associated with trading in a fluctuating environment.<br><br>2. Regulatory Landscape<br>As DeFi matures, it may face increasing regulatory scrutiny. Aerodrome Finance must navigate potential regulatory challenges to ensure compliance and maintain user trust.<br><br>3. Competition in the DeFi Space<br>The DeFi market is highly competitive, with numerous platforms offering similar services. Aerodrome Finance must continually innovate and differentiate itself to attract and retain users.<br><br>4. Security Risks<br>Despite prioritizing security, the DeFi space is not immune to vulnerabilities. Aerodrome Finance must remain vigilant in its security practices to protect user data and assets from potential threats.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Aerodrome Finance represents a significant advancement in the decentralized finance landscape, offering a comprehensive platform that empowers users with a range of liquidity solutions and trading opportunities. By prioritizing accessibility, security, and community engagement, Aerodrome Finance aims to create a more inclusive financial ecosystem that caters to the needs of individuals and businesses alike.<br><br>As the platform continues to evolve and expand its offerings, it has the potential to become a leading player in the DeFi space. By democratizing access to liquidity and fostering a sense of community, Aerodrome Finance embodies the principles of decentralization and innovation that define the future of finance.<br><br>For individuals seeking to navigate the complexities of decentralized finance, Aerodrome Finance offers a promising avenue to explore. With its commitment to user experience, education, and community involvement, the platform is well-positioned to thrive in the dynamic world of DeFi. Whether you are a novice trader or a seasoned investor, Aerodrome Finance provides the tools and resources needed to succeed in the ever-changing landscape of decentralized finance.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-2",
+          "_isUserblock": true,
+          "_cid": "uvYFY1d193",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
